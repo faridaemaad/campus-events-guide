@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle">
+
+    <header>
+        <h1>Campus Events Guide</h1>
+        <label for="theme-toggle">Dark Mode</label>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="event-details.html">Event Details</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="event-summary">
+            <h2>University Innovation Summit 2026</h2>
+            <p>Date: September 23, 2026</p>
+            <p>Venue: Zewail City of Science and Technology</p>
+        </section>
+
+        <section class="registration-section">
+            <h2>Registration Form</h2>
+            <form>
+                <label for="name">Attendee Name:</label>
+                <input type="text" id="name" required maxlength="50">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone Number (11 digits):</label>
+                <input type="text" id="phone" pattern="[0-9]{11}" maxlength="11" required>
+
+                <label for="website">Portfolio Website:</label>
+                <input type="url" id="website">
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" min="16" max="60">
+
+                <label for="interest">Interest Level:</label>
+                <input type="range" id="interest" min="1" max="10">
+
+                <label for="arrival-date">Arrival Date:</label>
+                <input type="date" id="arrival-date">
+
+                <label for="arrival-time">Arrival Time:</label>
+                <input type="time" id="arrival-time">
+
+                <label for="color">Badge Color:</label>
+                <input type="color" id="color">
+
+                <label for="student-id">Student ID Photo:</label>
+                <input type="file" id="student-id">
+
+                <label for="session">Event Choice:</label>
+                <select id="session">
+                    <option>AI Talk</option>
+                    <option>IoT Workshop</option>
+                </select>
+
+                <p>Attendee Type:</p>
+                <div class="option-row">
+                    <input type="radio" id="student" name="type" value="student" required>
+                    <label for="student">Student</label>
+                    <input type="radio" id="guest" name="type" value="guest">
+                    <label for="guest">Guest</label>
+                </div>
+
+                <div class="option-row">
+                    <input type="checkbox" id="access">
+                    <label for="access">I need access support</label>
+                </div>
+
+                <label for="notes">Access Needs / Notes:</label>
+                <textarea id="notes" maxlength="200"></textarea>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section class="contact">
+            <h2>Event Contact</h2>
+            <p>Email: zewailcity@campus.edu.eg</p>
+            <p>Phone: 01006569334</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+        <p>&copy; 2026 Campus Events Guide</p>
+    </footer>
+</body>
+</html>
